@@ -2309,9 +2309,6 @@ button,
   border-left-color: rgb(76, 175, 80);
   word-wrap: break-word;
 }
-.code, .codespan {
-  font-family: Consolas,"courier new";
-}
 .code {
   width: auto;
   background-color: #fff;
@@ -2323,4 +2320,16 @@ button,
   border-left-style: solid;
   border-left-color: rgb(76, 175, 80);
   word-wrap: break-word;
+}
+.codespan {
+  font-size: 105%;
+  background-color: rgba(222,222,222,0.3);
+}
+.codespan {
+  color:crimson;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.code, .codespan {
+  font-family: Consolas,"courier new";
 }
