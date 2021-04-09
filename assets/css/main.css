@@ -2283,6 +2283,10 @@ button,
 .example {
   background-color: #f1f1f1;
 }
+.error, .hover-error:hover {
+  color: #000!important;
+  background-color: #ffdddd!important;
+}
 .code, codeline {
   font-size: 15px;
 }
