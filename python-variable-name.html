@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Python Variables</title>
+		<title>Python Variable Names</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -23,160 +23,113 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>Python Variables</h1>
+										<h1>Python Variable Names</h1>
 									</header>
 
                                     <hr class="major" />
-                                    <h2>Variables</h2>
-                                    <p>Variabel adalah sebuah wadah untuk menyimpan nilai data.</p>
-
-                                    <hr class="major" />
-                                    <h2>Creating Variables</h2>
-                                    <p>Python tidak memiliki perintah untuk mendeklarasikan variabel.</p>
-                                    <p>Variabel dibuat saat kalian pertama kali memberikan nilai padanya.</p>
+                                    <h2>Variable Names</h2>
+                                    <p>Variabel dapat memiliki nama yang pendek (seperti x dan y) atau nama yang lebih deskriptif (age, carname, total_volume).</p>
+                                    <p>Aturan untuk penamaan variabel Python:</p>
+                                    <ul>
+                                        1. Nama variabel harus dimulai dengan huruf atau karakter garis bawah <code class="codespan">_</code>
+                                        <br>
+                                        2. Nama variabel tidak boleh dimulai dengan angka
+                                        <br>
+                                        3. Nama variabel hanya boleh berisi karakter alfanumerik dan garis bawah <code class="codespan">A-z</code>, <code class="codespan">0-9</code>, dan <code class="codespan">_</code>
+                                        <br>
+                                        4. Nama variabel adalah <em>case sensitive</em> (<code class="codespan">age</code>, <code class="codespan">Age</code>, dan <code class="codespan">AGE</code> adalah tiga variabel berbeda)
+                                    </ul>
                                     
                                     <div class="example">
                                         <h3>Contoh</h3>
+                                        <p>Nama Variabel yang Legal:</p>
                                         <div class="code notranslate pythonHigh">
                                             <span class="pythoncolor" style="color:black">
-                                                x = 
-                                                <span class="pythonnumbercolor" style="color: red">5</span>
-                                                <br>
-                                                y = 
+                                                myvar = 
                                                 <span class="pythonstringcolor" style="color: brown">"John"</span>
                                                 <br>
-                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (x)
+                                                my_var = 
+                                                <span class="pythonstringcolor" style="color: brown">"John"</span>
                                                 <br>
-                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (y)
+                                                _my_var = 
+                                                <span class="pythonstringcolor" style="color: brown">"John"</span>
+                                                <br>
+                                                myVar = 
+                                                <span class="pythonstringcolor" style="color: brown">"John"</span>
+                                                <br>
+                                                MYVAR = 
+                                                <span class="pythonstringcolor" style="color: brown">"John"</span>
+                                                <br>
+                                                myvar2 = 
+                                                <span class="pythonstringcolor" style="color: brown">"John"</span>
                                             </span>
                                         </div>
                                         <ul class="actions">
-                                            <li><a href="variable-trial.html" class="button big">Cobalah!</a></li>
+                                            <li><a href="variable-name-trial.html" class="button big">Cobalah!</a></li>
                                         </ul>
                                     </div>
-
-                                    <p>Variabel tidak perlu dideklarasikan dengan jenis tertentu, dan bahkan dapat mengubah jenis setelah ditetapkan.</p>
-									
-                                    <div class="example">
-                                        <h3>Contoh</h3>
-                                        <div class="code notranslate pythonHigh">
-                                            <span class="pythoncolor" style="color:black">
-                                                x = 
-                                                <span class="pythonnumbercolor" style="color: red">4</span>
-                                                &nbsp; &nbsp; &nbsp; &nbsp;
-                                                <span class="pythoncommentcolor" style="color:green"># x adalah jenis integer (bilangan bulat).</span>
-                                                <br>
-                                                x = 
-                                                <span class="pythonstringcolor" style="color:brown">"Sally"</span>
-                                                &nbsp;
-                                                <span class="pythoncommentcolor" style="color:green"># sekarang x adalah jenis string.</span>
-                                                <br>
-                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (x)
-                                            </span>
-                                        </div>
-                                        <ul class="actions">
-                                            <li><a href="variable-trial2.html" class="button big">Cobalah!</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <hr class="major" />
-                                    <h2>Casting</h2>
-                                    <p>Jika kalian ingin menentukan tipe data variabel, kalian dapat melakukannya dengan casting.</p>
                                     
-                                    <div class="example">
+                                    <div class="example error">
                                         <h3>Contoh</h3>
+                                        <p>Nama Variabel yang Illegal:</p>
                                         <div class="code notranslate pythonHigh">
                                             <span class="pythoncolor" style="color:black">
-                                                x = 
-                                                <span class="pythonkeywordcolor" style="color:blue">str</span>
-                                                (<span class="pythonnumbercolor" style="color: red">3</span>)
-                                                &nbsp; &nbsp; &nbsp;
-                                                <span class="pythoncommentcolor" style="color:green"># x akan menjadi '3'.</span>
-                                                <br>
-                                                y = 
-                                                <span class="pythonkeywordcolor" style="color:blue">int</span>
-                                                (<span class="pythonnumbercolor" style="color: red">3</span>)
-                                                &nbsp; &nbsp; &nbsp;
-                                                <span class="pythoncommentcolor" style="color:green"># x akan menjadi '3'.</span>
-                                                <br>
-                                                z = 
-                                                <span class="pythonkeywordcolor" style="color:blue">float</span>
-                                                (<span class="pythonnumbercolor" style="color: red">3</span>)
-                                                &nbsp; &nbsp;
-                                                <span class="pythoncommentcolor" style="color:green"># x akan menjadi '3.0'.</span>
-                                            </span>
-                                        </div>
-                                    </div>
-
-                                    <hr class="major" />
-                                    <h2>Get the Type</h2>
-                                    <p>Kalian bisa mendapatkan tipe data sebuah variabel dengan fungsi 
-                                        <code class="codespan">type()</code>.
-                                    </p>
-
-                                    <div class="example">
-                                        <h3>Contoh</h3>
-                                        <div class="code notranslate pythonHigh">
-                                            <span class="pythoncolor" style="color:black">
-                                                x = 
-                                                <span class="pythonnumbercolor" style="color: red">5</span>
-                                                <br>
-                                                y = 
+                                                2myvar = 
                                                 <span class="pythonstringcolor" style="color: brown">"John"</span>
                                                 <br>
-                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (<span class="pythonkeywordcolor" style="color: blue">type</span>(x))
+                                                my-var = 
+                                                <span class="pythonstringcolor" style="color: brown">"John"</span>
                                                 <br>
-                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (<span class="pythonkeywordcolor" style="color: blue">type</span>(y))
+                                                my var = 
+                                                <span class="pythonstringcolor" style="color: brown">"John"</span>
                                             </span>
                                         </div>
                                         <ul class="actions">
-                                            <li><a href="variable-trial3.html" class="button big">Cobalah!</a></li>
+                                            <li><a href="variable-name-trial-error.html" class="button big">Cobalah!</a></li>
                                         </ul>
                                     </div>
 
                                     <div class="note">
-                                        Kalian akan mempelajari lebih lanjut tentang <a href="python-data-types.html">Data Types</a> dan <a href="python-casting.html">Casting</a> nanti di tutorial ini.
+                                        Ingat! nama variabel itu <em>case sensitive</em>.
                                     </div>
 
                                     <hr class="major" />
-                                    <h2>Single or Double Quotes?</h2>
-                                    <p>Variabel string dapat dideklarasikan baik dengan menggunakan tanda kutip tunggal atau ganda:</p>
+                                    <h2>Multi Words Variable Names</h2>
+                                    <p>Nama variabel dengan lebih dari satu kata bisa jadi sulit untuk dibaca.</p>
+                                    <p>Ada beberapa teknik yang bisa kalian gunakan untuk membuatnya lebih mudah dibaca:</p>
+
+                                    <h3>Camel Case</h3>
+                                    <p>Setiap kata, kecuali huruf pertama dimulai dengan hutuf kapital:</p>
 
                                     <div class="example">
-                                        <h3>Contoh</h3>
-                                        <div class="code notranslate pythonHigh">
-                                            <span class="pythoncolor" style="color: black">
-                                                x = 
+                                        <div class="codeline notranslate pythonHigh">
+                                            <span class="pythoncolor" style="color:black">
+                                                myVariableName = 
                                                 <span class="pythonstringcolor" style="color: brown">"John"</span>
-                                                <br>
-                                                <span class="pythoncommentcolor" style="color:green">#sama artinya dengan</span>
-                                                <br>
-                                                x = 
-                                                <span class="pythonstringcolor" style="color: brown">'John'</span>
                                             </span>
                                         </div>
                                     </div>
 
-                                    <hr class="major" />
-                                    <h2>Case Sensitive</h2>
-                                    <p>Nama variabel adalah <em>case sensitive</em> (peka huruf besar kecil).</p>
+                                    <h3>Pascal Case</h3>
+                                    <p>Setiap kata dimulai dengan huruf kapital:</p>
 
                                     <div class="example">
-                                        <h3>Contoh</h3>
-                                        <div class="code notranslate pythonHigh">
+                                        <div class="codeline notranslate pythonHigh">
                                             <span class="pythoncolor" style="color:black">
-                                                a = 
-                                                <span class="pythonnumbercolor" style="color: red">4</span>
-                                                <br>
-                                                A = 
-                                                <span class="pythonstringcolor" style="color:brown">"Sally"</span>
-                                                <br>
-                                                <span class="pythoncommentcolor" style="color:green"># A tidak akan mengubah nilai a.</span>
+                                                MyVariableName = 
+                                                <span class="pythonstringcolor" style="color: brown">"John"</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <h3>Snake Case</h3>
+                                    <p>Setiap kata dipisahkan dengan sebuah karakter garis bawah <code class="codespan">_</code>:</p>
+
+                                    <div class="example">
+                                        <div class="codeline notranslate pythonHigh">
+                                            <span class="pythoncolor" style="color:black">
+                                                my_variable_name = 
+                                                <span class="pythonstringcolor" style="color: brown">"John"</span>
                                             </span>
                                         </div>
                                     </div>
