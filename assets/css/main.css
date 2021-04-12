@@ -2347,7 +2347,7 @@ button,
 }
 
 .codespan {
-  font-size: 105%;
+  font-size: 100%;
   background-color: rgba(222,222,222,0.3);
 }
 
@@ -2355,6 +2355,8 @@ button,
   color:crimson;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 .code, .codespan {
