@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
+
 <html>
 	<head>
-		<title>Python Format Strings</title>
+		<title>Casting Trial</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,122 +23,26 @@
 
 							<!-- Content -->
 								<section>
-									<header class="main">
-										<h1>Python Format Strings</h1>
-									</header>
+                                    <header class="major">
+                                        <h2>Casting Trial</h2>
+                                    </header>
+                                    <iframe src="https://trinket.io/embed/python3/0fa0e31f24?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+								</section>
+                        </div>
+                    </div>
 
-                                    <hr class="major" />
-                                    <h2>String Format</h2>
-                                    <p>Seperti yang kita pelajari di bagian <a href="python-variable.html">Python Variables</a>, kita tidak bisa menggabungkan string dan angka seperti ini:</p>
-                                    
-                                    <div class="example error">
-                                        <h3>Contoh</h3>
-                                        <div class="code notranslate pythonHigh">
-                                            <span class="pythoncolor" style="color:black">
-                                                age = 
-                                                <span class="pythonnumbercolor" style="color: red">36</span>
-                                                <br>
-                                                txt = 
-                                                <span class="pythonstringcolor" style="color: brown">"My name is John, I am "</span> + age
-                                                <br>
-                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (txt)
-                                            </span>
-                                        </div>
-                                        <ul class="actions">
-                                            <li><a href="string-format-trial.html" class="button big">Cobalah!</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <p>Tapi kita bisa menggabungkan string dan angka dengan menggunakan metode<code class="codespan">format()</code>!
-                                        <br>
-                                        Metode<code class="codespan">format()</code>mengambil argumen yang diteruskan, memformatnya, dan menempatkannya dalam string di mana placeholder<code class="codespan">{}</code>berada:
-                                    </p>
-
-                                    <div class="example">
-                                        <h3>Contoh</h3>
-                                        <p>Gunakan metode<code class="codespan">format()</code>untuk memasukkan angka ke dalam string:</p>
-                                        <div class="code notranslate pythonHigh">
-                                            <span class="pythoncolor" style="color:black">
-                                                age = 
-                                                <span class="pythonnumbercolor" style="color: red">36</span>
-                                                <br>
-                                                txt = 
-                                                <span class="pythonstringcolor" style="color: brown">"My name is John, I am {}"</span>
-                                                <br>
-                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (txt.<span class="pythonkeywordcolor" style="color:blue">format</span>(age))
-                                            </span>
-                                        </div>
-                                        <ul class="actions">
-                                            <li><a href="string-format-trial2.html" class="button big">Cobalah!</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <p>Metode<code class="codespan">format()</code>menggunakan jumlah argumen yang tidak terbatas, dan ditempatkan ke dalam placeholder masing-masing:</p>
-
-                                    <div class="example">
-                                        <h3>Contoh</h3>
-                                        <div class="code notranslate pythonHigh">
-                                            <span class="pythoncolor" style="color:black">
-                                                quantity = 
-                                                <span class="pythonnumbercolor" style="color: red">3</span>
-                                                <br>
-                                                itemno = 
-                                                <span class="pythonnumbercolor" style="color: red">567</span>
-                                                <br>
-                                                price = 
-                                                <span class="pythonnumbercolor" style="color: red">49.95</span>
-                                                <br>
-                                                myorder = 
-                                                <span class="pythonstringcolor" style="color: brown">"I want {} pieces of item {} for {} dollars."</span>
-                                                <br>
-                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (myorder.<span class="pythonkeywordcolor" style="color:blue">format</span>(quantity, itemno, price))
-                                            </span>
-                                        </div>
-                                        <ul class="actions">
-                                            <li><a href="string-format-trial3.html" class="button big">Cobalah!</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <p>Kalian bisa menggunakan nomor indeks<code class="codespan">{0}</code>untuk memastikan argumen ditempatkan di placeholder yang benar:</p>
-
-                                    <div class="example">
-                                        <h3>Contoh</h3>
-                                        <div class="code notranslate pythonHigh">
-                                            <span class="pythoncolor" style="color:black">
-                                                quantity = 
-                                                <span class="pythonnumbercolor" style="color: red">3</span>
-                                                <br>
-                                                itemno = 
-                                                <span class="pythonnumbercolor" style="color: red">567</span>
-                                                <br>
-                                                price = 
-                                                <span class="pythonnumbercolor" style="color: red">49.95</span>
-                                                <br>
-                                                myorder = 
-                                                <span class="pythonstringcolor" style="color: brown">"I want to pay {2} dollars for {0} pieces of item {1}."</span>
-                                                <br>
-                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (myorder.<span class="pythonkeywordcolor" style="color:blue">format</span>(quantity, itemno, price))
-                                            </span>
-                                        </div>
-                                        <ul class="actions">
-                                            <li><a href="string-format-trial4.html" class="button big">Cobalah!</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <p>Pelajari lebih lanjut tentang <em>String Formatting</em> pada bagian <a href="python-string-formatting.html">String Formatting</a>.</p>
-
-                                </section>
-
-						</div>
-					</div>
-
-				<!-- Sidebar -->
+                <!-- Sidebar -->
 					<div id="sidebar">
 						<div class="inner">
+
+							<!-- Search -->
+								<!--
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+								-->
 
 							<!-- Menu -->
                             <nav id="menu">
@@ -224,8 +129,6 @@
                                                 <li><a href="python-dictionaries-method.html">Dictionaries Methods</a></li>
                                             </ul>
                                             <li><a href="python-if-else.html">Python If...Else</a></li>
-                                            <li><a href="python-while-loop.html">Python While Loops</a></li>
-                                            <li><a href="python-for-loop.html">Python For Loops</a></li>
                                             <li><a href="python-function.html">Python Functions</a></li>
                                             <li><a href="python-lambda.html">Python Lambda</a></li>
                                             <li><a href="python-array.html">Python Arrays</a></li>
@@ -247,22 +150,18 @@
                                 </ul>
                             </nav>
 
-							<!-- Footer -->
+								<!-- Footer -->
 								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved.</p>
+									<p class="copyright">&copy; Untitled. All rights reserved</a>.</p>
 								</footer>
-
-						</div>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
+            </div>
+            
+        <!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	</body>
-</html>
+    </body>
+</html> 
