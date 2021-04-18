@@ -1,0 +1,422 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Python Booleans</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Python</strong> for Everyone</a>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Python Booleans</h1>
+									</header>
+
+                                    <p>Boolean mewakili salah satu dari dua nilai:<code class="codespan">True</code>atau<code class="codespan">False</code>.</p>
+
+                                    <hr class="major" />
+                                    <h2>Boolean Values</h2>
+                                    <p>Dalam pemrograman, kalian sering kali perlu mengetahui apakah ekspresi itu<code class="codespan">True</code>atau<code class="codespan">False</code>.</p>
+                                    <p>Kalian dapat mengevaluasi ekspresi apapun dengan Python dan mendapatkan salah satu dari dua jawaban,<code class="codespan">True</code>atau<code class="codespan">False</code>./p>
+                                    <p>Saat kalian membandingkan dua nilai, ekspresi dievaluasi dan Python mengembalikan jawaban Boolean::</p>
+                                    
+                                    <div class="example">
+                                        <h3>Contoh</h3>
+                                        <div class="code notranslate pythonHigh">
+                                            <span class="pythoncolor" style="color:black">
+                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
+                                                (<span class="pythonnumbercolor" style="color: red">10</span> > <span class="pythonnumbercolor" style="color: red">9</span>)
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
+                                                (<span class="pythonnumbercolor" style="color: red">10</span> == <span class="pythonnumbercolor" style="color: red">9</span>)
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
+                                                (<span class="pythonnumbercolor" style="color: red">10</span> < <span class="pythonnumbercolor" style="color: red">9</span>)
+                                            </span>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="boolean-trial.html" class="button big">Cobalah!</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <p>Saat kalian menjalankan kondisi dalam pernyataan if, Python mengembalikan True atau False:</p>
+
+                                    <div class="example">
+                                        <h3>Contoh</h3>
+                                        <div class="code notranslate pythonHigh">
+                                            <span class="pythoncolor" style="color:black">
+                                                a = 
+                                                <span class="pythonnumbercolor" style="color: red">200</span>
+                                                <br>
+                                                b = 
+                                                <span class="pythonnumbercolor" style="color: red">33</span>
+                                                <br>
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">if</span>
+                                                b > a:
+                                                <br>&nbsp;&nbsp;
+                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
+                                                (<span class="pythonstringcolor" style="color: brown">"b is greater than a"</span>)
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">else</span>:
+                                                <br>&nbsp;&nbsp;
+                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
+                                                (<span class="pythonstringcolor" style="color: brown">"b is not greater than a"</span>)
+                                            </span>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="boolean-trial2.html" class="button big">Cobalah!</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <hr class="major" />
+                                    <h2>Evaluate Values and Variables</h2>
+                                    <p>Fungsi<code class="codespan">bool()</code>memungkinkan kalian mengevaluasi nilai apa pun, dan memberi kalian<code class="codespan">True</code>atau<code class="codespan">False</code>sebagai gantinya.</p>
+
+                                    <div class="example">
+                                        <h3>Contoh</h3>
+                                        <p>Evaluasi string dan angka:</p>
+                                        <div class="code notranslate pythonHigh">
+                                            <span class="pythoncolor" style="color:black">
+                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
+                                                (<span class="pythonkeywordcolor" style="color:blue">bool</span>(<span class="pythonstringcolor" style="color: brown">"Hello"</span>))
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
+                                                (<span class="pythonkeywordcolor" style="color:blue">bool</span>(<span class="pythonnumbercolor" style="color: red">15</span>))
+                                            </span>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="boolean-trial3.html" class="button big">Cobalah!</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="example">
+                                        <h3>Contoh</h3>
+                                        <p>Evaluasi dua variabel:</p>
+                                        <div class="code notranslate pythonHigh">
+                                            <span class="pythoncolor" style="color:black">
+                                                x = 
+                                                <span class="pythonstringcolor" style="color: brown">"Hello"</span>
+                                                <br>
+                                                y = 
+                                                <span class="pythonnumbercolor" style="color: red">15</span>
+                                                <br>
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
+                                                (<span class="pythonkeywordcolor" style="color:blue">bool</span>(x))
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
+                                                (<span class="pythonkeywordcolor" style="color:blue">bool</span>(y))
+                                            </span>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="boolean-trial4.html" class="button big">Cobalah!</a></li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <hr class="major" />
+                                    <h2>Most Values are True</h2>
+                                    <p>Hampir semua nilai dievaluasi ke<code class="codespan">True</code>jika memiliki semacam konten.</p>
+                                    <p>Semua string adalah<code class="codespan">True</code>, kecuali string kosong.</p>
+                                    <p>Angka apa pun<code class="codespan">True</code>, kecuali 0.</p>
+                                    <p>Setiap <em>list</em>, <em>tuple</em>, <em>set</em>, dan <em>dictionary</em> adalah<code class="codespan">True</code>, kecuali yang kosong.</p>
+
+                                    <div class="example">
+                                        <h3>Contoh</h3>
+                                        <p>Berikut ini akan mengembalikan nilai True:</p>
+                                        <div class="code notranslate pythonHigh">
+                                            <span class="pythoncolor" style="color:black">
+                                                <span class="pythonkeywordcolor" style="color:blue">bool</span>(<span class="pythonstringcolor" style="color: brown">"abc"</span>)
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">bool</span>(<span class="pythonnumbercolor" style="color: red">123</span>)
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">bool</span>([<span class="pythonstringcolor" style="color: brown">"apple"</span>, <span class="pythonstringcolor" style="color: brown">"cherry"</span>, <span class="pythonstringcolor" style="color: brown">"banana"</span>])
+                                            </span>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="boolean-trial5.html" class="button big">Cobalah!</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <hr class="major" />
+                                    <h2>Some Values are False</h2>
+                                    <p>Nyatanya, tidak banyak nilai yang dievaluasi ke<code class="codespan">False</code>, kecuali nilai kosong, seperti<code class="codespan">()</code>, <code class="codespan">[]</code>, <code class="codespan">{}</code>, <code class="codespan">""</code>, angka<code class="codespan">0</code>, dan nilai<code class="codespan">None</code>. Dan tentu saja nilai<code class="codespan">False</code>terevaluasi menjadi<code class="codespan">False</code>    .</p>
+
+                                    <div class="example">
+                                        <h3>Contoh</h3>
+                                        <p>Berikut ini akan mengembalikan nilai True:</p>
+                                        <div class="code notranslate pythonHigh">
+                                            <span class="pythoncolor" style="color:black">
+                                                <span class="pythonkeywordcolor" style="color:blue">bool</span>(<span class="pythonkeywordcolor" style="color:blue">False</span>)
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">bool</span>(None)
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">bool</span>(<span class="pythonnumbercolor" style="color: red">0</span>)
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">bool</span>(<span class="pythonstringcolor" style="color: brown">""</span>)
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">bool</span>(())
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">bool</span>([])
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">bool</span>({})
+                                            </span>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="boolean-trial6.html" class="button big">Cobalah!</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <p>Satu nilai lagi, atau objek dalam kasus ini, mengevaluasi ke<code class="codespan">False</code>, dan itu jika Anda memiliki objek yang dibuat dari kelas dengan fungsi<code class="codespan">__len__</code>yang mengembalikan<code class="codespan">0</code>atau<code class="codespan">False</code>:</p>
+
+                                    <div class="example">
+                                        <h3>Contoh</h3>
+                                        <div class="code notranslate pythonHigh">
+                                            <span class="pythoncolor" style="color:black">
+                                                <span class="pythonkeywordcolor" style="color:blue">class</span>
+                                                myclass():
+                                                <br>
+                                                &nbsp;&nbsp;
+                                                <span class="pythonkeywordcolor" style="color:blue">def</span>
+                                                __len__(self):
+                                                <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span class="pythonkeywordcolor" style="color:blue">return</span>
+                                                <span class="pythonnumbercolor" style="color: red">0</span>
+                                                <br>
+                                                <br>
+                                                myobj = myclass()
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
+                                                (<span class="pythonkeywordcolor" style="color:blue">bool</span>(myobj))
+                                            </span>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="boolean-trial7.html" class="button big">Cobalah!</a></li>
+                                        </ul>
+                                    </div>
+                                    <hr class="major" />
+                                    <h2>Functions can Return a Boolean</h2>
+                                    <p>Kalian dapat membuat fungsi yang mengembalikan Nilai Boolean:</p>
+
+                                    <div class="example">
+                                        <h3>Contoh</h3>
+                                        <p>Cetak jawaban dari suatu fungsi:</p>
+                                        <div class="code notranslate pythonHigh">
+                                            <span class="pythoncolor" style="color:black">
+                                                <span class="pythonkeywordcolor" style="color:blue">def</span>
+                                                myFunction():
+                                                <br>
+                                                &nbsp;&nbsp;
+                                                <span class="pythonkeywordcolor" style="color:blue">return True</span>
+                                                <br>
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">print</span>(myFunction())
+                                            </span>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="boolean-trial8.html" class="button big">Cobalah!</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <p>Kalian dapat mengeksekusi kode berdasarkan jawaban Boolean dari suatu fungsi:</p>
+
+                                    <div class="example">
+                                        <h3>Contoh</h3>
+                                        <p>Cetak "YES!" jika fungsi mengembalikan True, jika tidak cetak "NO!":</p>
+                                        <div class="code notranslate pythonHigh">
+                                            <span class="pythoncolor" style="color:black">
+                                                <span class="pythonkeywordcolor" style="color:blue">def</span>
+                                                myFunction():
+                                                <br>
+                                                &nbsp;&nbsp;
+                                                <span class="pythonkeywordcolor" style="color:blue">return True</span>
+                                                <br>
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">if</span> myFunction():
+                                                <br>
+                                                &nbsp;&nbsp;
+                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
+                                                (<span class="pythonstringcolor" style="color: brown">"YES!"</span>)
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">else</span>:
+                                                <br>
+                                                &nbsp;&nbsp;
+                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
+                                                (<span class="pythonstringcolor" style="color: brown">"NO!"</span>)
+                                            </span>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="boolean-trial9.html" class="button big">Cobalah!</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <p>Python juga memiliki banyak fungsi bawaan yang mengembalikan nilai boolean, seperti fungsi<code class="codespan">isinstance()</code>, yang dapat digunakan untuk menentukan apakah suatu objek berjenis data tertentu:</p>
+
+                                    <div class="example">
+                                        <h3>Contoh</h3>
+                                        <p>Periksa apakah suatu objek adalah bilangan bulat atau bukan:</p>
+                                        <div class="code notranslate pythonHigh">
+                                            <span class="pythoncolor" style="color:black">
+                                                x = 
+                                                <span class="pythonnumbercolor" style="color: red">200</span>
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
+                                                (<span class="pythonkeywordcolor" style="color:blue">isinstance</span>(x, <span class="pythonkeywordcolor" style="color:blue">int</span>))
+                                            </span>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="boolean-trial10.html" class="button big">Cobalah!</a></li>
+                                        </ul>
+                                    </div>
+
+                                </section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Menu -->
+                            <nav id="menu">
+                                <header class="major">
+                                    <h2>Menu</h2>
+                                </header>
+                                <ul>
+                                    <li><a href="index.html">Homepage</a></li>
+                                    <li><a href="started.html">Getting Started</a></li>
+                                    <li>
+                                        <span class="opener">Python Tutorial</span>
+                                        <ul>
+                                            <li><a href="python-syntax.html">Python Syntax</a></li>
+                                            <li><a href="python-comment.html">Python Comments</a></li>
+                                            <li>
+                                                <span class="opener">Python Variables</span>
+                                                <ul>
+                                                    <li><a href="python-variable.html">Python Variables</a></li>
+                                                    <li><a href="python-variable-name.html">Variable Names</a></li>
+                                                    <li><a href="python-variable-assign-multiple-value.html">Assign Multiple Values</a></li>
+                                                    <li><a href="python-variable-output.html">Output Variables</a></li>
+                                                    <li><a href="python-variable-global.html">Global Variables</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="python-data-types.html">Python Data Types</a></li>
+                                            <li><a href="python-number.html">Python Numbers</a></li>
+                                            <li><a href="python-casting.html">Python Casting</a></li>
+                                            <span class="opener">Python Strings</span>
+                                            <ul>
+                                                <li><a href="python-string.html">Python Strings</a></li>
+                                                <li><a href="python-string-slicing.html">Slicing Strings</a></li>
+                                                <li><a href="python-string-modify.html">Modify Strings</a></li>
+                                                <li><a href="python-string-concatenate.html">Concatenate Strings</a></li>
+                                                <li><a href="python-string-format.html">Format Strings</a></li>
+                                                <li><a href="python-string-escape-character.html">Escape Characters</a></li>
+                                                <li><a href="python-string-method.html">String Methods</a></li>
+                                            </ul>
+                                            <li><a href="python-boolean.html">Python Boolean</a></li>
+                                            <li><a href="python-operator.html">Python Operators</a></li>
+                                            <span class="opener">Python Lists</span>
+                                            <ul>
+                                                <li><a href="python-list.html">Python Lists</a></li>
+                                                <li><a href="python-list-access-item.html">Access List Items</a></li>
+                                                <li><a href="python-list-change-item.html">Change List Items</a></li>
+                                                <li><a href="python-list-add-item.html">Add List Items</a></li>
+                                                <li><a href="python-list-remove-items.html">Remove List Items</a></li>
+                                                <li><a href="python-list-loop.html">Loop Lists</a></li>
+                                                <li><a href="python-list-comprehension.html">List Comprehension</a></li>
+                                                <li><a href="python-list-sort.html">Sort Lists</a></li>
+                                                <li><a href="python-list-copy.html">Copy Lists</a></li>
+                                                <li><a href="python-list-join.html">Join Lists</a></li>
+                                                <li><a href="python-list-method.html">List Methods</a></li>
+                                            </ul>
+                                            <span class="opener">Python Tupples</span>
+                                            <ul>
+                                                <li><a href="python-tuple.html">Python Tuples</a></li>
+                                                <li><a href="python-tuple-access.html">Access Tuples</a></li>
+                                                <li><a href="python-tuple-update.html">Update Tuples</a></li>
+                                                <li><a href="python-tuple-unpack.html">Unpack Tuples</a></li>
+                                                <li><a href="python-tuple-loop.html">Loop Tuples</a></li>
+                                                <li><a href="python-tuple-join.html">Join Tuples</a></li>
+                                                <li><a href="python-tuple-method.html">Tuple Methods</a></li>
+                                            </ul>
+                                            <span class="opener">Python Sets</span>
+                                            <ul>
+                                                <li><a href="python-set.html">Python Sets</a></li>
+                                                <li><a href="python-set-access-item.html">Access Set Items</a></li>
+                                                <li><a href="python-set-add-item.html">Add Set Items</a></li>
+                                                <li><a href="python-set-remove-item.html">Remove Set Items</a></li>
+                                                <li><a href="python-set-loop.html">Loop Sets</a></li>
+                                                <li><a href="python-set-join.html">Join Sets</a></li>
+                                                <li><a href="python-set-method.html">Set Methods</a></li>
+                                            </ul>
+                                            <span class="opener">Python Dictionaries</span>
+                                            <ul>
+                                                <li><a href="python-dictionaries.html">Python Dictionaries</a></li>
+                                                <li><a href="python-dictionaries-access-item.html">Access Items</a></li>
+                                                <li><a href="python-dictionaries-change-item.html">Change Items</a></li>
+                                                <li><a href="python-dictionaries-add-item.html">Add Items</a></li>
+                                                <li><a href="python-dictionaries-remove-item.html">Remove Items</a></li>
+                                                <li><a href="python-dictionaries-loop.html">Loop Dictionaries</a></li>
+                                                <li><a href="python-dictionaries-copy.html">Copy Dictionaries</a></li>
+                                                <li><a href="python-dictionaries-nested.html">Nested Dictionaries</a></li>
+                                                <li><a href="python-dictionaries-method.html">Dictionaries Methods</a></li>
+                                            </ul>
+                                            <li><a href="python-if-else.html">Python If...Else</a></li>
+                                            <li><a href="python-while-loop.html">Python While Loops</a></li>
+                                            <li><a href="python-for-loop.html">Python For Loops</a></li>
+                                            <li><a href="python-function.html">Python Functions</a></li>
+                                            <li><a href="python-lambda.html">Python Lambda</a></li>
+                                            <li><a href="python-array.html">Python Arrays</a></li>
+                                            <li><a href="python-class-object.html">Python Classes/Objects</a></li>
+                                            <li><a href="python-inheritance.html">Python Inheritance</a></li>
+                                            <li><a href="python-iterator.html">Python Iterators</a></li>
+                                            <li><a href="python-scope.html">Python Scope</a></li>
+                                            <li><a href="python-date.html">Python Dates</a></li>
+                                            <li><a href="python-math.html">Python Math</a></li>
+                                            <li><a href="python-try-except.html">Python Try...Except</a></li>
+                                            <li><a href="python-user-input.html">Python User Input</a></li>
+                                            <li><a href="python-string-formatting.html">Python String Formatting</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="python-module.html">Python Modules</a></li>
+                                    <li><a href="python-json.html">Python JSON</a></li>
+                                    <li><a href="python-regex.html">Python RegEx</a></li>
+                                    <li><a href="python-pip.html">Python PIP</a></li>
+                                </ul>
+                            </nav>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
