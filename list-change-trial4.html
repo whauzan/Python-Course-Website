@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
+
 <html>
 	<head>
-		<title>Python Change Lists</title>
+		<title>List Change Items Trial</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,138 +23,26 @@
 
 							<!-- Content -->
 								<section>
-									<header class="main">
-										<h1>Python Change Lists Items</h1>
-									</header>
+                                    <header class="major">
+                                        <h2>List Change Items Trial</h2>
+                                    </header>
+                                    <iframe src="https://trinket.io/embed/python3/3d3ee2df9a?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+								</section>
+                        </div>
+                    </div>
 
-                                    <hr class="major" />
-                                    <h2>Change Item Value</h2>
-                                    <p>Untuk mengubah nilai item tertentu, lihat nomor indeks:</p>
-                                    
-                                    <div class="example">
-                                        <h3>Contoh</h3>
-                                        <p>Ubah item kedua:</p>
-                                        <div class="code notranslate pythonHigh">
-                                            <span class="pythoncolor" style="color:black">
-                                                thislist = 
-                                                [<span class="pythonstringcolor" style="color:brown">"apple"</span>, <span class="pythonstringcolor" style="color:brown">"banana"</span>, <span class="pythonstringcolor" style="color:brown">"cherry"</span>]
-                                                <br>
-                                                thislist[<span class="pythonnumbercolor" style="color:red">1</span>] = <span class="pythonstringcolor" style="color:brown">"blackcurrant"</span>
-                                                <br>
-                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (thislist)
-                                            </span>
-                                        </div>
-                                        <ul class="actions">
-                                            <li><a href="list-change-trial.html" class="button big">Cobalah!</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <hr class="major" />
-                                    <h2>Change a Range of Item Values</h2>
-                                    <p>Untuk mengubah nilai item dalam rentang tertentu, tentukan list dengan nilai baru, dan rujuk ke rentang nomor indeks tempat kalian ingin memasukkan nilai baru:</p>
-
-                                    <div class="example">
-                                        <h3>Contoh</h3>
-                                        <p>Ubah nilai "banana" dan "cherry" dengan nilai "blackcurrant" dan "watermelon":</p>
-                                        <div class="code notranslate pythonHigh">
-                                            <span class="pythoncolor" style="color:black">
-                                                thislist = 
-                                                [<span class="pythonstringcolor" style="color:brown">"apple"</span>, <span class="pythonstringcolor" style="color:brown">"banana"</span>, <span class="pythonstringcolor" style="color:brown">"cherry"</span>, <span class="pythonstringcolor" style="color:brown">"orange"</span>, <span class="pythonstringcolor" style="color:brown">"kiwi"</span>, <span class="pythonstringcolor" style="color:brown">"melon"</span>, <span class="pythonstringcolor" style="color:brown">"mango"</span>]
-                                                <br>
-                                                thislist[<span class="pythonnumbercolor" style="color:red">1</span>:<span class="pythonnumbercolor" style="color:red">3</span>] = [<span class="pythonstringcolor" style="color:brown">"blackcurrant"</span>, <span class="pythonstringcolor" style="color:brown">"watermelon"</span>]
-                                                <br>
-                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (thislist)
-                                            </span>
-                                        </div>
-                                        <ul class="actions">
-                                            <li><a href="list-change-trial2.html" class="button big">Cobalah!</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <p>Jika kalian memasukkan lebih banyak item daripada yang kalian ganti, item baru akan disisipkan di tempat yang kalian tentukan, dan item yang tersisa akan dipindahkan sesuai dengan itu:</p>
-
-                                    <div class="example">
-                                        <h3>Contoh</h3>
-                                        <p>Ubah nilai kedua dengan menggantinya dengan dua nilai baru:</p>
-                                        <div class="code notranslate pythonHigh">
-                                            <span class="pythoncolor" style="color:black">
-                                                thislist = 
-                                                [<span class="pythonstringcolor" style="color:brown">"apple"</span>, <span class="pythonstringcolor" style="color:brown">"banana"</span>, <span class="pythonstringcolor" style="color:brown">"cherry"</span>]
-                                                <br>
-                                                thislist[<span class="pythonnumbercolor" style="color:red">1</span>:<span class="pythonnumbercolor" style="color:red">2</span>] = [<span class="pythonstringcolor" style="color:brown">"blackcurrant"</span>, <span class="pythonstringcolor" style="color:brown">"watermelon"</span>]
-                                                <br>
-                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (thislist)
-                                            </span>
-                                        </div>
-                                        <ul class="actions">
-                                            <li><a href="list-change-trial3.html" class="button big">Cobalah!</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="note">
-                                        <strong>Note:</strong> Panjang list akan berubah jika jumlah item yang dimasukkan tidak sesuai dengan jumlah item yang diganti.
-                                    </div>
-
-                                    <p>Jika kalian memasukkan lebih sedikit item daripada yang kalian ganti, item baru akan disisipkan di tempat yang kalian tentukan, dan item yang tersisa akan dipindahkan sesuai dengan itu:</p>
-                                    
-                                    <div class="example">
-                                        <h3>Contoh</h3>
-                                        <p>Ubah nilai kedua dan ketiga dengan menggantinya dengan satu nilai:</p>
-                                        <div class="code notranslate pythonHigh">
-                                            <span class="pythoncolor" style="color:black">
-                                                thislist = 
-                                                [<span class="pythonstringcolor" style="color:brown">"apple"</span>, <span class="pythonstringcolor" style="color:brown">"banana"</span>, <span class="pythonstringcolor" style="color:brown">"cherry"</span>]
-                                                <br>
-                                                thislist[<span class="pythonnumbercolor" style="color:red">1</span>:<span class="pythonnumbercolor" style="color:red">3</span>] = [<span class="pythonstringcolor" style="color:brown">"watermelon"</span>]
-                                                <br>
-                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (thislist)
-                                            </span>
-                                        </div>
-                                        <ul class="actions">
-                                            <li><a href="list-change-trial4.html" class="button big">Cobalah!</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <hr class="major" />
-                                    <h2>Insert Items</h2>
-                                    <p>Untuk menyisipkan item list baru, tanpa mengganti nilai yang ada, kita bisa menggunakan metode<code class="codespan">insert()</code>.</p>
-                                    <p>Metode<code class="codespan">insert()</code>menyisipkan item pada indeks yang ditentukan:</p>
-
-                                    <div class="example">
-                                        <h3>Contoh</h3>
-                                        <p>Masukkan "watermelon" sebagai item ketiga</p>
-                                        <div class="code notranslate pythonHigh">
-                                            <span class="pythoncolor" style="color:black">
-                                                thislist = 
-                                                [<span class="pythonstringcolor" style="color:brown">"apple"</span>, <span class="pythonstringcolor" style="color:brown">"banana"</span>, <span class="pythonstringcolor" style="color:brown">"cherry"</span>]
-                                                <br>
-                                                thislist.insert(<span class="pythonnumbercolor" style="color:red">2</span>, <span class="pythonstringcolor" style="color:brown">"watermelon"</span>)
-                                                <br>
-                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (thislist)
-                                            </span>
-                                        </div>
-                                        <ul class="actions">
-                                            <li><a href="list-change-trial5.html" class="button big">Cobalah!</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="note">
-                                        <strong>Note:</strong> Sebagai hasil dari contoh di atas, daftar sekarang akan berisi 4 item.
-                                    </div>
-
-                                </section>
-
-						</div>
-					</div>
-
-				<!-- Sidebar -->
+                <!-- Sidebar -->
 					<div id="sidebar">
 						<div class="inner">
+
+							<!-- Search -->
+								<!--
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+								-->
 
 							<!-- Menu -->
                             <nav id="menu">
@@ -263,22 +152,18 @@
                                 </ul>
                             </nav>
 
-							<!-- Footer -->
+								<!-- Footer -->
 								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved.</p>
+									<p class="copyright">&copy; Untitled. All rights reserved</a>.</p>
 								</footer>
-
-						</div>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
+            </div>
+            
+        <!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	</body>
-</html>
+    </body>
+</html> 
