@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
+
 <html>
 	<head>
-		<title>Python Loop Lists</title>
+		<title>List Comprehension Trial</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,127 +23,26 @@
 
 							<!-- Content -->
 								<section>
-									<header class="main">
-										<h1>Python Loop Lists</h1>
-									</header>
+                                    <header class="major">
+                                        <h2>List Comprehension Trial</h2>
+                                    </header>
+                                    <iframe src="https://trinket.io/embed/python3/8f50637c72?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+								</section>
+                        </div>
+                    </div>
 
-                                    <hr class="major" />
-                                    <h2>Loop Through a List</h2>
-                                    <p>Kalian dapat melakukan loop melalui item list dengan menggunakan<code class="codespan">for</code>loop:</p>
-                                    
-                                    <div class="example">
-                                        <h3>Contoh</h3>
-                                        <p>Cetak semua item dalam list, satu per satu:</p>
-                                        <div class="code notranslate pythonHigh">
-                                            <span class="pythoncolor" style="color:black">
-                                                thislist = 
-                                                [<span class="pythonstringcolor" style="color:brown">"apple"</span>, <span class="pythonstringcolor" style="color:brown">"banana"</span>, <span class="pythonstringcolor" style="color:brown">"cherry"</span>]
-                                                <br>
-                                                <span class="pythonkeywordcolor" style="color:blue">for</span> x <span class="pythonkeywordcolor" style="color:blue">in</span> thislist:
-                                                <br>
-                                                &nbsp;&nbsp;
-                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (x)
-                                            </span>
-                                        </div>
-                                        <ul class="actions">
-                                            <li><a href="list-loop-trial.html" class="button big">Cobalah!</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <p>Pelajari lebih lanjut tentang<code class="codespan">for</code>loop di bagian <a href="python-for-loop.html">Python For Loops</a>.</p>
-
-                                    <hr class="major" />
-                                    <h2>Loop Through the Index Numbers</h2>
-                                    <p>Kalian juga dapat melakukan perulangan melalui item list dengan mengacu pada nomor indeksnya.</p>
-                                    <p>Gunakan fungsi<code class="codespan">range()</code>dan<code class="codespan">len()</code>untuk membuat perulangan yang sesuai.</p>
-
-                                    <div class="example">
-                                        <h3>Contoh</h3>
-                                        <p>Cetak semua item dengan mengacu pada nomor indeksnya:</p>
-                                        <div class="code notranslate pythonHigh">
-                                            <span class="pythoncolor" style="color:black">
-                                                thislist = 
-                                                [<span class="pythonstringcolor" style="color:brown">"apple"</span>, <span class="pythonstringcolor" style="color:brown">"banana"</span>, <span class="pythonstringcolor" style="color:brown">"cherry"</span>]
-                                                <br>
-                                                <span class="pythonkeywordcolor" style="color:blue">for</span> i <span class="pythonkeywordcolor" style="color:blue">in range</span>(<span class="pythonkeywordcolor" style="color:blue">len</span>(thislist)):
-                                                <br>
-                                                &nbsp;&nbsp;
-                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (thislist[i])
-                                            </span>
-                                        </div>
-                                        <ul class="actions">
-                                            <li><a href="list-loop-trial2.html" class="button big">Cobalah!</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <p>Perulangan yang dibuat pada contoh di atas adalah<code class="codespan">[0, 1, 2]</code>.</p>
-
-                                    <hr class="major" />
-                                    <h2>Using a While Loop</h2>
-                                    <p>Kalian dapat melakukan loop melalui item list dengan menggunakan<code class="codespan">while</code>loop.</p>
-                                    <p>Gunakan fungsi<code class="codespan">len()</code>untuk menentukan panjang daftar, kemudian mulai dari 0 dan loop melalui item list dengan merujuk ke indeksnya.</p>
-                                    <p>Ingatlah untuk meningkatkan indeks sebesar 1 setelah setiap iterasi.</p>
-
-                                    <div class="example">
-                                        <h3>Contoh</h3>
-                                        <p>Cetak semua item, menggunakan<code class="codespan">while</code>loop untuk memeriksa semua nomor indeks:</p>
-                                        <div class="code notranslate pythonHigh">
-                                            <span class="pythoncolor" style="color:black">
-                                                thislist = 
-                                                [<span class="pythonstringcolor" style="color:brown">"apple"</span>, <span class="pythonstringcolor" style="color:brown">"banana"</span>, <span class="pythonstringcolor" style="color:brown">"cherry"</span>]
-                                                <br>
-                                                i = <span class="pythonnumbercolor" style="color:red">0</span>
-                                                <br>
-                                                <span class="pythonkeywordcolor" style="color:blue">while</span> i < <span class="pythonkeywordcolor" style="color:blue">len</span>(thislist):
-                                                <br>
-                                                &nbsp;&nbsp;
-                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (thislist[i])
-                                                <br>
-                                                &nbsp;&nbsp;
-                                                i = i + <span class="pythonnumbercolor" style="color:red">1</span>
-                                            </span>
-                                        </div>
-                                        <ul class="actions">
-                                            <li><a href="list-loop-trial3.html" class="button big">Cobalah!</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <p>Pelajari lebih lanjut tentang<code class="codespan">while</code>loop di bagian <a href="python-while-loop.html">Python While Loops</a>.</p>
-
-                                    <hr class="major" />
-                                    <h2>Looping Using List Comprehension</h2>
-                                    <p>List Comprehension menawarkan sintaks terpendek untuk perulangan melalui daftar:</p>
-
-                                    <div class="example">
-                                        <h3>Contoh</h3>
-                                        <p>Singkatan dari loop yang akan mencetak semua item dalam list:</p>
-                                        <div class="code notranslate pythonHigh">
-                                            <span class="pythoncolor" style="color:black">
-                                                thislist = 
-                                                [<span class="pythonstringcolor" style="color:brown">"apple"</span>, <span class="pythonstringcolor" style="color:brown">"banana"</span>, <span class="pythonstringcolor" style="color:brown">"cherry"</span>]
-                                                <br>
-                                                [<span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (x) <span class="pythonkeywordcolor" style="color:blue">for</span> x <span class="pythonkeywordcolor" style="color:blue">in</span> thislist]
-                                            </span>
-                                        </div>
-                                        <ul class="actions">
-                                            <li><a href="list-loop-trial4.html" class="button big">Cobalah!</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <p>Pelajari lebih lanjut tentang List Comprehension di bagian <a href="python-list-comprehension.html">List Comprehension</a>.</p>
-
-                                </section>
-
-						</div>
-					</div>
-
-				<!-- Sidebar -->
+                <!-- Sidebar -->
 					<div id="sidebar">
 						<div class="inner">
+
+							<!-- Search -->
+								<!--
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+								-->
 
 							<!-- Menu -->
                             <nav id="menu">
@@ -252,22 +152,18 @@
                                 </ul>
                             </nav>
 
-							<!-- Footer -->
+								<!-- Footer -->
 								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved.</p>
+									<p class="copyright">&copy; Untitled. All rights reserved</a>.</p>
 								</footer>
-
-						</div>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
+            </div>
+            
+        <!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	</body>
-</html>
+    </body>
+</html> 
