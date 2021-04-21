@@ -122,62 +122,106 @@
                                         akan mengembalikan<code class="codespan">True</code>untuk semua elemen kecuali "apple", membuat list baru yang berisi semua buah-buahan kecuali "apple".
                                     </p>
                                     <p><em>Condition</em> itu opsional dan dapat dihilangkan:</p>
-                                    
-                                    <hr class="major" />
-                                    <h2>Using a While Loop</h2>
-                                    <p>Kalian dapat melakukan loop melalui item list dengan menggunakan<code class="codespan">while</code>loop.</p>
-                                    <p>Gunakan fungsi<code class="codespan">len()</code>untuk menentukan panjang daftar, kemudian mulai dari 0 dan loop melalui item list dengan merujuk ke indeksnya.</p>
-                                    <p>Ingatlah untuk meningkatkan indeks sebesar 1 setelah setiap iterasi.</p>
 
                                     <div class="example">
                                         <h3>Contoh</h3>
-                                        <p>Cetak semua item, menggunakan<code class="codespan">while</code>loop untuk memeriksa semua nomor indeks:</p>
+                                        <p>Tanpa statement<code class="codespan">if</code>:</p>
                                         <div class="code notranslate pythonHigh">
                                             <span class="pythoncolor" style="color:black">
-                                                thislist = 
-                                                [<span class="pythonstringcolor" style="color:brown">"apple"</span>, <span class="pythonstringcolor" style="color:brown">"banana"</span>, <span class="pythonstringcolor" style="color:brown">"cherry"</span>]
-                                                <br>
-                                                i = <span class="pythonnumbercolor" style="color:red">0</span>
-                                                <br>
-                                                <span class="pythonkeywordcolor" style="color:blue">while</span> i < <span class="pythonkeywordcolor" style="color:blue">len</span>(thislist):
-                                                <br>
-                                                &nbsp;&nbsp;
-                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (thislist[i])
-                                                <br>
-                                                &nbsp;&nbsp;
-                                                i = i + <span class="pythonnumbercolor" style="color:red">1</span>
+                                                newlist = 
+                                                [x <span class="pythonkeywordcolor" style="color:blue">for</span> x <span class="pythonkeywordcolor" style="color:blue">in</span> fruits]
                                             </span>
                                         </div>
                                         <ul class="actions">
-                                            <li><a href="list-loop-trial3.html" class="button big">Cobalah!</a></li>
+                                            <li><a href="list-comprehension-trial4.html" class="button big">Cobalah!</a></li>
                                         </ul>
                                     </div>
 
-                                    <p>Pelajari lebih lanjut tentang<code class="codespan">while</code>loop di bagian <a href="python-while-loop.html">Python While Loops</a>.</p>
-
-                                    <hr class="major" />
-                                    <h2>Looping Using List Comprehension</h2>
-                                    <p>List Comprehension menawarkan sintaks terpendek untuk perulangan melalui daftar:</p>
+                                    <h2>Iterable</h2>
+                                    <p><em>Iterable</em> dapat berupa objek iterable apa saja, seperti list, tuple, set, dll.</p>
 
                                     <div class="example">
                                         <h3>Contoh</h3>
-                                        <p>Singkatan dari loop yang akan mencetak semua item dalam list:</p>
+                                        <p>Kalian bisa menggunakan fungsi<code class="codespan">range()</code>untuk membuat sebuah perulangan:</p>
                                         <div class="code notranslate pythonHigh">
                                             <span class="pythoncolor" style="color:black">
-                                                thislist = 
-                                                [<span class="pythonstringcolor" style="color:brown">"apple"</span>, <span class="pythonstringcolor" style="color:brown">"banana"</span>, <span class="pythonstringcolor" style="color:brown">"cherry"</span>]
-                                                <br>
-                                                [<span class="pythonkeywordcolor" style="color:blue">print</span>
-                                                (x) <span class="pythonkeywordcolor" style="color:blue">for</span> x <span class="pythonkeywordcolor" style="color:blue">in</span> thislist]
+                                                newlist = 
+                                                [x <span class="pythonkeywordcolor" style="color:blue">for</span> x <span class="pythonkeywordcolor" style="color:blue">in range</span>(<span class="pythonnumbercolor" style="color:red">10</span>)]
                                             </span>
                                         </div>
                                         <ul class="actions">
-                                            <li><a href="list-loop-trial4.html" class="button big">Cobalah!</a></li>
+                                            <li><a href="list-comprehension-trial5.html" class="button big">Cobalah!</a></li>
                                         </ul>
                                     </div>
 
-                                    <p>Pelajari lebih lanjut tentang List Comprehension di bagian <a href="python-list-comprehension.html">List Comprehension</a>.</p>
+                                    <p>Contoh yang sama, namun dengan kondisi:</p>
+
+                                    <div class="example">
+                                        <h3>Contoh</h3>
+                                        <p>Terima hanya angka yang lebih rendah dari 5:</p>
+                                        <div class="code notranslate pythonHigh">
+                                            <span class="pythoncolor" style="color:black">
+                                                newlist = 
+                                                [x <span class="pythonkeywordcolor" style="color:blue">for</span> x <span class="pythonkeywordcolor" style="color:blue">in range</span>(<span class="pythonnumbercolor" style="color:red">10</span>) <span class="pythonkeywordcolor" style="color:blue">if</span> x < <span class="pythonnumbercolor" style="color:red">5</span>]
+                                            </span>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="list-comprehension-trial6.html" class="button big">Cobalah!</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <hr class="major" />
+                                    <h2>Expression</h2>
+                                    <p>Ekspresi adalah item saat ini dalam iterasi, tetapi juga merupakan hasil, yang dapat kalian manipulasi sebelum berakhir seperti item list di list baru:</p>
+
+                                    <div class="example">
+                                        <h3>Contoh</h3>
+                                        <p>Tetapkan nilai dari newlist menjadi huruf kapital:</p>
+                                        <div class="code notranslate pythonHigh">
+                                            <span class="pythoncolor" style="color:black">
+                                                newlist = 
+                                                [x.upper() <span class="pythonkeywordcolor" style="color:blue">for</span> x <span class="pythonkeywordcolor" style="color:blue">in</span> fruits]
+                                            </span>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="list-comprehension-trial7.html" class="button big">Cobalah!</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <p>Kalian dapat mengatur hasilnya sesuai keinginan kalian:</p>
+
+                                    <div class="example">
+                                        <h3>Contoh</h3>
+                                        <p>Tetapkan semua nilai dalam newlist menjadi 'hello':</p>
+                                        <div class="code notranslate pythonHigh">
+                                            <span class="pythoncolor" style="color:black">
+                                                newlist = 
+                                                [<span class="pythonstringcolor" style="color:brown">"hello"</span> <span class="pythonkeywordcolor" style="color:blue">for</span> x <span class="pythonkeywordcolor" style="color:blue">in</span> fruits]
+                                            </span>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="list-comprehension-trial8.html" class="button big">Cobalah!</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <p>Ekspresi juga dapat berisi kondisi, tidak seperti filter, tetapi sebagai cara untuk memanipulasi hasil:</p>
+
+                                    <div class="example">
+                                        <h3>Contoh</h3>
+                                        <p>Mengembalikan "orange" bukan "banana":</p>
+                                        <div class="code notranslate pythonHigh">
+                                            <span class="pythoncolor" style="color:black">
+                                                newlist = 
+                                                [x <span class="pythonkeywordcolor" style="color:blue">if</span> x != <span class="pythonstringcolor" style="color:brown">"banana"</span> <span class="pythonkeywordcolor" style="color:blue">else</span> <span class="pythonstringcolor" style="color:brown">"orange"</span> <span class="pythonkeywordcolor" style="color:blue">for</span> x <span class="pythonkeywordcolor" style="color:blue">in</span> fruits]
+                                            </span>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="list-comprehension-trial9.html" class="button big">Cobalah!</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <p>Ekspresi dalam contoh di atas mengatakan:</p>
+                                    <p>"<em>Mengembalikan item jika bukan banana, jika banana maka akan mengembalikan orange</em>".</p>
 
                                 </section>
 
