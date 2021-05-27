@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Python List Join</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="../../index.html" class="logo"><strong>Python</strong> for Everyone</a>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Python Join List</h1>
+									</header>
+
+                                    <hr class="major" />
+                                    <h2>Join Two List</h2>
+                                    <p>Ada beberapa cara untuk menggabungkan dua atau lebih list dengan Python.</p>
+                                    <p>Salah satu cara termudah adalah dengan menggunakan operator<code class="codespan">+</code>.</p>
+
+                                    <div class="example">
+                                        <h3>Contoh</h3>
+                                        <p>Gabungkan dua list:</p>
+                                        <div class="code notranslate pythonHigh">
+                                            <span class="pythoncolor" style="color:black">
+                                                list1 = 
+                                                [<span class="pythonstringcolor" style="color:brown">"a"</span>, <span class="pythonstringcolor" style="color:brown">"b"</span>, <span class="pythonstringcolor" style="color:brown">"c"</span>]
+                                                <br>
+                                                list2 = 
+                                                [<span class="pythonnumbercolor" style="color:red">1</span>, <span class="pythonnumbercolor" style="color:red">2</span>, <span class="pythonnumbercolor" style="color:red">3</span>]
+                                                <br>
+                                                <br>
+                                                list3 = list1 + list2
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
+                                                (list3)
+                                            </span>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="../trial/list-join-trial.html" target="_blank" class="button big">Cobalah!</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <p>Cara lain untuk menggabungkan dua list adalah dengan menambahkan semua item dari list2 ke list1, satu per satu:</p>
+
+                                    <div class="example">
+                                        <h3>Contoh</h3>
+                                        <p>Tambahkan list2 ke list1:</p>
+                                        <div class="code notranslate pythonHigh">
+                                            <span class="pythoncolor" style="color:black">
+                                                list1 = 
+                                                [<span class="pythonstringcolor" style="color:brown">"a"</span>, <span class="pythonstringcolor" style="color:brown">"b"</span>, <span class="pythonstringcolor" style="color:brown">"c"</span>]
+                                                <br>
+                                                list2 = 
+                                                [<span class="pythonnumbercolor" style="color:red">1</span>, <span class="pythonnumbercolor" style="color:red">2</span>, <span class="pythonnumbercolor" style="color:red">3</span>]
+                                                <br>
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">for</span> x <span class="pythonkeywordcolor" style="color:blue">in</span> list2:
+                                                <br>
+                                                &nbsp;&nbsp;
+                                                list1.append(x)
+                                                <br>
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
+                                                (list1)
+                                            </span>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="../trial/list-join-trial2.html" target="_blank" class="button big">Cobalah!</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <p>Atau kalian bisa menggunakan metode<code class="codespan">extend()</code>, yang tujuannya adalah menambahkan elemen dari satu list ke list lain:</p>
+
+                                    <div class="example">
+                                        <h3>Contoh</h3>
+                                        <p>Gunakan metode<code class="codespan">extend()</code>untuk menambahkan list2 di akhir list1:</p>
+                                        <div class="code notranslate pythonHigh">
+                                            <span class="pythoncolor" style="color:black">
+                                                list1 = 
+                                                [<span class="pythonstringcolor" style="color:brown">"a"</span>, <span class="pythonstringcolor" style="color:brown">"b"</span>, <span class="pythonstringcolor" style="color:brown">"c"</span>]
+                                                <br>
+                                                list2 = 
+                                                [<span class="pythonnumbercolor" style="color:red">1</span>, <span class="pythonnumbercolor" style="color:red">2</span>, <span class="pythonnumbercolor" style="color:red">3</span>]
+                                                <br>
+                                                <br>
+                                                list1.extend(list2)
+                                                <br>
+                                                <span class="pythonkeywordcolor" style="color:blue">print</span>
+                                                (list1)
+                                            </span>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="../trial/list-join-trial3.html" target="_blank" class="button big">Cobalah!</a></li>
+                                        </ul>
+                                    </div>
+
+                                </section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Menu -->
+                            <nav id="menu">
+                                <header class="major">
+                                    <h2>Menu</h2>
+                                </header>
+                                <ul>
+                                    <li><a href="../../index.html">Homepage</a></li>
+                                    <li><a href="../html/started.html">Getting Started</a></li>
+                                    <li>
+                                        <span class="opener">Python Tutorial</span>
+                                        <ul>
+                                            <li><a href="../html/python-syntax.html">Python Syntax</a></li>
+                                            <li><a href="../html/python-comment.html">Python Comments</a></li>
+                                            <li>
+                                                <span class="opener">Python Variables</span>
+                                                <ul>
+                                                    <li><a href="../html/python-variable.html">Python Variables</a></li>
+                                                    <li><a href="../html/python-variable-name.html">Variable Names</a></li>
+                                                    <li><a href="../html/python-variable-assign-multiple-value.html">Assign Multiple Values</a></li>
+                                                    <li><a href="../html/python-variable-output.html">Output Variables</a></li>
+                                                    <li><a href="../html/python-variable-global.html">Global Variables</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="../html/python-data-types.html">Python Data Types</a></li>
+                                            <li><a href="../html/python-number.html">Python Numbers</a></li>
+                                            <li><a href="../html/python-casting.html">Python Casting</a></li>
+                                            <span class="opener">Python Strings</span>
+                                            <ul>
+                                                <li><a href="../html/python-string.html">Python Strings</a></li>
+                                                <li><a href="../html/python-string-slicing.html">Slicing Strings</a></li>
+                                                <li><a href="../html/python-string-modify.html">Modify Strings</a></li>
+                                                <li><a href="../html/python-string-concatenate.html">Concatenate Strings</a></li>
+                                                <li><a href="../html/python-string-format.html">Format Strings</a></li>
+                                                <li><a href="../html/python-string-escape-character.html">Escape Characters</a></li>
+                                                <li><a href="../html/python-string-method.html">String Methods</a></li>
+                                            </ul>
+                                            <li><a href="../html/python-boolean.html">Python Boolean</a></li>
+                                            <li><a href="../html/python-operator.html">Python Operators</a></li>
+                                            <span class="opener">Python Lists</span>
+                                            <ul>
+                                                <li><a href="../html/python-list.html">Python Lists</a></li>
+                                                <li><a href="../html/python-list-access-item.html">Access List Items</a></li>
+                                                <li><a href="../html/python-list-change-item.html">Change List Items</a></li>
+                                                <li><a href="../html/python-list-add-item.html">Add List Items</a></li>
+                                                <li><a href="../html/python-list-remove-items.html">Remove List Items</a></li>
+                                                <li><a href="../html/python-list-loop.html">Loop Lists</a></li>
+                                                <li><a href="../html/python-list-comprehension.html">List Comprehension</a></li>
+                                                <li><a href="../html/python-list-sort.html">Sort Lists</a></li>
+                                                <li><a href="../html/python-list-copy.html">Copy Lists</a></li>
+                                                <li><a href="../html/python-list-join.html">Join Lists</a></li>
+                                                <li><a href="../html/python-list-method.html">List Methods</a></li>
+                                            </ul>
+                                            <span class="opener">Python Tupples</span>
+                                            <ul>
+                                                <li><a href="../html/python-tuple.html">Python Tuples</a></li>
+                                                <li><a href="../html/python-tuple-access.html">Access Tuples</a></li>
+                                                <li><a href="../html/python-tuple-update.html">Update Tuples</a></li>
+                                                <li><a href="../html/python-tuple-unpack.html">Unpack Tuples</a></li>
+                                                <li><a href="../html/python-tuple-loop.html">Loop Tuples</a></li>
+                                                <li><a href="../html/python-tuple-join.html">Join Tuples</a></li>
+                                                <li><a href="../html/python-tuple-method.html">Tuple Methods</a></li>
+                                            </ul>
+                                            <span class="opener">Python Sets</span>
+                                            <ul>
+                                                <li><a href="../html/python-set.html">Python Sets</a></li>
+                                                <li><a href="../html/python-set-access-item.html">Access Set Items</a></li>
+                                                <li><a href="../html/python-set-add-item.html">Add Set Items</a></li>
+                                                <li><a href="../html/python-set-remove-item.html">Remove Set Items</a></li>
+                                                <li><a href="../html/python-set-loop.html">Loop Sets</a></li>
+                                                <li><a href="../html/python-set-join.html">Join Sets</a></li>
+                                                <li><a href="../html/python-set-method.html">Set Methods</a></li>
+                                            </ul>
+                                            <span class="opener">Python Dictionaries</span>
+                                            <ul>
+                                                <li><a href="../html/python-dictionaries.html">Python Dictionaries</a></li>
+                                                <li><a href="../html/python-dictionaries-access-item.html">Access Items</a></li>
+                                                <li><a href="../html/python-dictionaries-change-item.html">Change Items</a></li>
+                                                <li><a href="../html/python-dictionaries-add-item.html">Add Items</a></li>
+                                                <li><a href="../html/python-dictionaries-remove-item.html">Remove Items</a></li>
+                                                <li><a href="../html/python-dictionaries-loop.html">Loop Dictionaries</a></li>
+                                                <li><a href="../html/python-dictionaries-copy.html">Copy Dictionaries</a></li>
+                                                <li><a href="../html/python-dictionaries-nested.html">Nested Dictionaries</a></li>
+                                                <li><a href="../html/python-dictionaries-method.html">Dictionaries Methods</a></li>
+                                            </ul>
+                                            <li><a href="../html/python-if-else.html">Python If...Else</a></li>
+                                            <li><a href="../html/python-while-loop.html">Python While Loops</a></li>
+                                            <li><a href="../html/python-for-loop.html">Python For Loops</a></li>
+                                            <li><a href="../html/python-function.html">Python Functions</a></li>
+                                            <li><a href="../html/python-lambda.html">Python Lambda</a></li>
+                                            <li><a href="../html/python-array.html">Python Arrays</a></li>
+                                            <li><a href="../html/python-class-object.html">Python Classes/Objects</a></li>
+                                            <li><a href="../html/python-inheritance.html">Python Inheritance</a></li>
+                                            <li><a href="../html/python-iterator.html">Python Iterators</a></li>
+                                            <li><a href="../html/python-scope.html">Python Scope</a></li>
+                                            <li><a href="../html/python-date.html">Python Dates</a></li>
+                                            <li><a href="../html/python-math.html">Python Math</a></li>
+                                            <li><a href="../html/python-try-except.html">Python Try...Except</a></li>
+                                            <li><a href="../html/python-user-input.html">Python User Input</a></li>
+                                            <li><a href="../html/python-string-formatting.html">Python String Formatting</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../html/python-module.html">Python Modules</a></li>
+                                    <li><a href="../html/python-json.html">Python JSON</a></li>
+                                    <li><a href="../html/python-regex.html">Python RegEx</a></li>
+                                    <li><a href="../html/python-pip.html">Python PIP</a></li>
+                                </ul>
+                            </nav>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../js/jquery.min.js"></script>
+			<script src="../js/browser.min.js"></script>
+			<script src="../js/breakpoints.min.js"></script>
+			<script src="../js/util.js"></script>
+			<script src="../js/main.js"></script>
+
+	</body>
+</html>
